@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  cdn:"http://localhost:4200/store"
 };

@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './widgets/home/home.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
-  // { path: 'item/:id', component: ItemComponent },
-  { path: '',   redirectTo: '/home', pathMatch: 'full' },
-  // { path: '**', component: PageNotFoundComponent },
+
+  { path: 'home', loadChildren: () => import('./widgets/home/home.module').then(m => m.HomeModule) },
+  { path: 'header', loadChildren: () => import('./widgets/header/header.module').then(m => m.HeaderModule) },
+
 ];
 
 @NgModule({

@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HeaderComponent } from './header.component';
+import { RouterModule, Routes } from '@angular/router';
 
 
-
+const routes: Routes = [{ path: '', component: HeaderComponent, }];
 @NgModule({
-  declarations: [],
+  declarations: [HeaderComponent],
   imports: [
-    CommonModule
-  ]
+    CommonModule,
+    RouterModule.forChild(routes)
+  ],
+  bootstrap: [HeaderComponent],
 })
 export class HeaderModule { }
