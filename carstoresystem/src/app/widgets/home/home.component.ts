@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+
+   }
+
+  materlizeView(){
+    const slider:any=document.querySelectorAll('.slider');
+    var sliderInstance = M.Slider.init(slider, {});
+  }
 
   ngOnInit(): void {
+    this.materlizeView();
   }
 
 }

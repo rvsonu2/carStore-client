@@ -1,0 +1,9 @@
+.heading{
+  border-radius: 10px;
+  margin: 20px 0px !important;
+  box-shadow: 3px 3px 3px 3px #888888;
+}
+
+.heading h6{
+  margin: 0px !important;
+}

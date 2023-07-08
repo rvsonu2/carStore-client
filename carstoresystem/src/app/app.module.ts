@@ -8,7 +8,7 @@ import { FooterComponent } from './widgets/footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
